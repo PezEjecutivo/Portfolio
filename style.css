@@ -13,7 +13,7 @@
 body {
     width: 100%;
     height: auto;
-    background-color: black;
+    background-color: rgb(13, 17, 23);
     overflow-x: hidden;
 }
 
@@ -176,6 +176,10 @@ section .main-container {
     100% {
         scale: 1;
     }
+}
+
+.about {
+    background: rgb(25, 29, 35);
 }
 
 .main-container .content {
@@ -392,7 +396,7 @@ section .button button:hover {
 }
 
 .skills {
-    background: black;
+    background: rgb(13, 17, 23);
 }
 
 .skills .content {
@@ -455,6 +459,10 @@ section .button button:hover {
     color: #007bff;
 }
 
+.projects {
+    background: rgb(25, 29, 35);
+}
+
 .projects .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -508,7 +516,7 @@ section .button button:hover {
 }
 
 .contact {
-    background: black;
+    background: rgb(13, 17, 23);
 }
 
 .contact .content {
