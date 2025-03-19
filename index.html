@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <title>Pablo Valladares - Indice</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #121212;
+                color: #ffffff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .card-container {
+                display: flex;
+                gap: 20px;
+            }
+
+            .card {
+                background-color: #1e1e1e;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                width: 200px;
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 18px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            }
+
+            .card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+                background-color: #007bff;
+                color: #ffffff;
+            }
+        </style>
+    </head>
+    <body style="display: flex; flex-direction: column">
+        <h1 data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">¿Que es lo que te interesa de mi?</h1>
+        <div class="card-container">
+            <a href="./es/index.html" class="card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"
+                >Portfolio en español</a
+            >
+            <a href="./en/index.html" class="card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"
+                >Portfolio in english</a
+            >
+            <a
+                style="line-height: 1.5rem"
+                href="https://pvgceti.github.io/Apuntes/"
+                class="card"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-delay="400"
+                >Proyecto: <br />Web de Apuntes</a
+            >
+        </div>
+    </body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+</html>
