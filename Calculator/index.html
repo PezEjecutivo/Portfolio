@@ -5,9 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/png" href="../media/pezEjecutivo.png" />
         <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <title>PabloVG - Calculator</title>
     </head>
     <body>
+        <header>
+            <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                <a href="../index.html"><button id="back-button">←</button></a>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                <a href="https://pvgceti.github.io/Apuntes/"><button id="back-button">Web de apuntes</button></a>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                <a href="../es/index.html"><button id="back-button">Portfolio en español</button></a>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                <a href="../en/index.html"><button id="back-button">Portfolio in english</button></a>
+            </div>
+        </header>
+
         <div id="calculator">
             <input id="display" readonly />
             <div id="keys">
@@ -30,6 +46,11 @@
                 <button onclick="clearDisplay()">C</button>
             </div>
         </div>
+
         <script src="script.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({ offset: 0 });
+        </script>
     </body>
 </html>
