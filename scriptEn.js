@@ -1,5 +1,5 @@
 const typewriterText = document.querySelector(".typewriter-text");
-const words = ["Desarrollador Web", "Especialista en Ciberseguridad"];
+const words = ["Web Developer", "Cybersecurity Specialist"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
