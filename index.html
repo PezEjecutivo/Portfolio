@@ -2,115 +2,17 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/png" href="./media/pezEjecutivo.png" />
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="stylesheet" href="indexStyle.css" />
-        <title>PabloVG - Indice</title>
+        <!-- <meta http-equiv="refresh" content="0; url=https://www.pablo-vg.com/es/" /> -->
+        <title>Redireccionando...</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
-        <h1 data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">¿Qué es lo que te interesa de mi?</h1>
-        <div class="card-container">
-            <a
-                href="./es/index.html"
-                class="card"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-                data-aos-delay="200"
-                data-github-url="https://github.com/PabloVGceti"
-            >
-                <div class="card-title">Portfolio en español</div>
-                <div class="card-image">
-                    <img src="./media/banderaEs.svg" alt="" />
-                </div>
-                <div class="card-description">Explora mi trabajo y experiencia profesional presentada en español.</div>
-            </a>
-
-            <a
-                href="./en/index.html"
-                class="card"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-                data-aos-delay="300"
-                data-github-url="https://github.com/PabloVGceti"
-            >
-                <div class="card-title">Portfolio in English</div>
-                <div class="card-image">
-                    <img src="./media/banderaEn.svg" alt="" />
-                </div>
-                <div class="card-description">Check out my professional work and experience presented in English.</div>
-            </a>
-
-            <a
-                href="./Calculator/index.html"
-                class="card"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-                data-aos-delay="600"
-            >
-                <div class="card-title">Calculadora</div>
-                <div class="card-image">
-                    <img src="./media/ProyectoCalculadora.png" alt="" />
-                </div>
-                <div class="card-description">Una calculadora funcional bastante simple.</div>
-            </a>
-
-            <a
-                href="https://pvgceti.github.io/Apuntes/"
-                class="card"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-                data-aos-delay="400"
-                data-github-url="https://github.com/PVGCeti/Apuntes"
-            >
-                <div class="card-title">Web de Apuntes</div>
-                <div class="card-image">
-                    <img src="./media/ProyectoApuntes.png" alt="" />
-                </div>
-                <div class="card-description">
-                    Proyecto personal que recopila apuntes y recursos de estudio organizados por temas.
-                </div>
-            </a>
-
-            <a
-                href="https://ai-interview-pvg.vercel.app/"
-                class="card"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-                data-aos-delay="500"
-            >
-                <div class="card-title">AI-nterview</div>
-                <div class="card-image">
-                    <img src="./media/ProyectoAI.png" alt="Imagen del proyecto" />
-                </div>
-                <div class="card-description">
-                    Plataforma interactiva que simula entrevistas laborales con asistencia de inteligencia artificial.
-                </div>
-            </a>
+        <div class="character-sheet">
+            <p>Si no eres redirigido automáticamente, <a href="https://www.pablo-vg.com/es/">haz clic aquí</a>.</p>
         </div>
-
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init({ offset: 0 });
-
-            document.addEventListener("DOMContentLoaded", function () {
-                const cards = document.querySelectorAll(".card");
-
-                cards.forEach((card) => {
-                    const githubUrl = card.dataset.githubUrl;
-
-                    if (githubUrl) {
-                        const cardImage = card.querySelector(".card-title");
-                        const githubIcon = document.createElement("a");
-                        githubIcon.href = githubUrl;
-                        githubIcon.classList.add("github-icon");
-                        githubIcon.target = "_blank";
-                        githubIcon.innerHTML =
-                            '<img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" />';
-                        cardImage.appendChild(githubIcon);
-                    }
-                });
-            });
-        </script>
     </body>
 </html>

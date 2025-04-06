@@ -1,302 +1,250 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>PabloVG - Portfolio personal</title>
-        <link rel="icon" type="image/png" href="../media/pezEjecutivo.png" />
         <link rel="stylesheet" href="../style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+        <title>PabloVG - Portfolio</title>
     </head>
     <body>
-        <nav>
-            <div class="nav-container">
-                <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-                    <span>Pablo Valladares</span>
-                </div>
-                <div class="links">
-                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
-                        <a href="#">Inicio</a>
-                    </div>
-                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-                        <a href="#about">Sobre mí</a>
-                    </div>
-                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
-                        <a href="#skills">Habilidades</a>
-                    </div>
-                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-                        <a href="#projects">Conocimientos</a>
-                    </div>
-                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
-                        <a href="#contact">Contáctame</a>
-                    </div>
-                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
-                        <a href="../index.html">Indice</a>
-                    </div>
-                </div>
-                <div class="hamburg" onclick="hamburg()">
-                    <img src="../media/hamburguesa.png" alt="Menú" width="30" height="30" />
+        <div class="character-sheet">
+            <div class="header">
+                <h1 data-aos="fade-down" data-aos-duration="1500" data-aos-delay="100" data-aos-once="true">PabloVG</h1>
+                <div
+                    class="subtitle"
+                    data-aos="fade-down"
+                    data-aos-duration="1500"
+                    data-aos-delay="300"
+                    data-aos-once="true"
+                >
+                    Soy un
+                    <span class="typewriter-text"> </span>
                 </div>
             </div>
-            <div class="dropdown">
-                <div class="links">
-                    <div class="link"><a href="#">Inicio</a></div>
-                    <div class="link"><a href="#about">Sobre mí</a></div>
-                    <div class="link"><a href="#skills">Habilidades</a></div>
-                    <div class="link"><a href="#projects">Proyectos</a></div>
-                    <div class="link"><a href="#contact">Contáctame</a></div>
+
+            <div class="top-section">
+                <div
+                    class="character-image"
+                    data-aos="zoom-in"
+                    data-aos-duration="3000"
+                    data-aos-delay="100"
+                    data-aos-once="true"
+                >
+                    <img
+                        style="object-fit: cover; width: 100%; height: 100%"
+                        src="../media/Yo.png"
+                        alt="Rocatón, el Topo de la Pala"
+                    />
+                </div>
+
+                <div class="basic-info">
+                    <h2 class="section-title">Información Básica</h2>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-label">Idiomas:</div>
+                            <div>Español - Nativo <br />Ingles - Fluido (B2)</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">Especilidad:</div>
+                            <div>FullStack - Backend</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">
+                                Lenguajes <br />
+                                principales:
+                            </div>
+                            <div>
+                                PHP | Java <br />
+                                Python | JavaScript
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">Estado:</div>
+                            <div
+                                class="alignment"
+                                data-aos="flip-up"
+                                data-aos-duration="2500"
+                                data-aos-delay="100"
+                                data-aos-once="true"
+                            >
+                                En busqueda de empleo
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-        <section>
-            <div class="main-container">
-                <div class="image">
-                    <img src="../media/Yo.png" alt="" />
-                </div>
-                <div class="content">
-                    <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
-                        Hola! Soy
-                        <span>PabloVG</span>
-                    </h1>
-                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
-                        Soy un&nbsp;
-                        <span class="typewriter-text"> </span>
+
+            <div class="section">
+                <h2 class="section-title">Sobre mí</h2>
+                <p>
+                    Soy un entusiasta del <strong>desarrollo de aplicaciones web</strong> y la
+                    <strong>ciberseguridad</strong>, comprometido con la creación de soluciones innovadoras y seguras.
+                    Mi pasión por la tecnología me impulsa a mantenerme actualizado con las últimas tendencias y mejores
+                    prácticas.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2
+                    class="section-title"
+                    data-aos="fade-in"
+                    data-aos-duration="1500"
+                    data-aos-delay="100"
+                    data-aos-once="true"
+                >
+                    Conocimientos
+                </h2>
+                <p>
+                    Poseo un dominio avanzado de lenguajes como <strong>JavaScript</strong>, <strong>Java</strong>,
+                    <strong>PHP</strong>
+                    y <strong>Python</strong>, así como sólidos conocimientos en bases de datos <strong>MySQL</strong> y
+                    <strong>MongoDB</strong>. Además, tengo experiencia en la creación de interfaces de usuario
+                    atractivas y responsivas con frameworks modernos como <strong>TailwindCSS</strong> y
+                    <strong>Bootstrap</strong>. Mis conocimientos también incluye el uso de <strong>Docker</strong> para
+                    la gestión de contenedores, así como conocimientos en <strong>hacking ético</strong> y
+                    <strong>análisis forense</strong>, lo que me permite abordar proyectos de desarrollo web con un
+                    enfoque integral y seguro.
+                </p>
+                <div style="display: flex; flex-direction: row; justify-content: space-between">
+                    <div>
+                        <h2>Backend</h2>
+                        <ul class="belongings">
+                            <li>Python</li>
+                            <li>PHP</li>
+                            <li>Java</li>
+                            <li>NextJS/NodeJS</li>
+                        </ul>
                     </div>
-                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
-                        Poseo un dominio avanzado de lenguajes como JavaScript, Java, PHP y Python, así como sólidos
-                        conocimientos en bases de datos MySQL y MongoDB. Además, tengo experiencia en la creación de
-                        interfaces de usuario atractivas y responsivas con frameworks modernos como TailwindCSS y
-                        Bootstrap. Mi formación también incluye el uso de Docker para la gestión de contenedores, así
-                        como conocimientos en hacking ético y análisis forense, lo que me permite abordar proyectos de
-                        desarrollo web con un enfoque integral y seguro.
+                    <div>
+                        <h2>Frontend</h2>
+                        <ul class="belongings">
+                            <li>SaaS</li>
+                            <li>TailwindCSS</li>
+                            <li>JavaScript</li>
+                            <li>React/Angular/Vue/Astro</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Base de datos</h2>
+                        <ul class="belongings">
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                            <li>Firebase</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Generales</h2>
+                        <ul class="belongings">
+                            <li>Docker</li>
+                            <li>Git</li>
+                            <li>Ciberseguridad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2
+                    class="section-title"
+                    data-aos="fade-in"
+                    data-aos-duration="1500"
+                    data-aos-delay="100"
+                    data-aos-once="true"
+                >
+                    Proyectos
+                </h2>
+
+                <div class="mission-board">
+                    <div class="missions-grid">
+                        <a href="#" class="mission-card">
+                            <div class="mission-image">
+                                <img src="../media/ProyectoAI.png" alt="Proyecto 1" />
+                            </div>
+                            <div class="mission-content">
+                                <h4 class="mission-title">Generador de entrevistas con AI</h4>
+                                <p class="mission-desc">
+                                    Plataforma interactiva practicar entrevistas con un asistente de Inteligencia
+                                    Artificial.
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="mission-card">
+                            <div class="mission-image">
+                                <img src="../media/ProyectoApuntes.png" alt="Proyecto 2" />
+                            </div>
+                            <div class="mission-content">
+                                <h4 class="mission-title">Apuntes sobre informatica</h4>
+                                <p class="mission-desc">
+                                    Blog a modo de apuntes con información y guias sobre desarrollo y ciberseguridad
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2
+                    class="section-title"
+                    data-aos="fade-in"
+                    data-aos-duration="1500"
+                    data-aos-delay="100"
+                    data-aos-once="true"
+                >
+                    Experiencia Laboral
+                </h2>
+                <div class="history">
+                    <h3>Digital Cuisine</h3>
+                    <p>
+                        En Digital Cuisine realice un trabajo como desarrollador full stack donde realice multiples
+                        cosas, entre las que destacan:
                     </p>
-                    <div class="social-links">
-                        <a
-                            href="https://github.com/PezEjecutivo"
-                            data-aos="fade-up"
-                            data-aos-duration="1500"
-                            data-aos-delay="1300"
-                            target="_blank"
-                        >
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a
-                            href="https://www.linkedin.com/in/pablo-valladares-gonz%C3%A1lez/"
-                            data-aos="fade-up"
-                            data-aos-duration="1500"
-                            data-aos-delay="1500"
-                            target="_blank"
-                        >
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </div>
-                    <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800" target="_blank">
-                        <a href="mailto:PvalladaresG@proton.me?subject=Quiero20%Contactarte&body=Body%20Here">
-                            <button>Contrátame</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="about" id="about">
-            <div class="content">
-                <div class="title" data-aos="fade-up" data-aos-duration="1500">
-                    <span style="margin-top: 30px">Sobre mí</span>
-                </div>
-                <div class="about-details">
-                    <div class="left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
-                        <img src="../media/pezEjecutivo.png" alt="" />
-                    </div>
-                    <div class="right">
-                        <div class="topic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
-                            Desarrollar es mi pasión.
-                        </div>
-                        <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
-                            Soy un entusiasta del desarrollo de aplicaciones web y la ciberseguridad, comprometido con
-                            la creación de soluciones innovadoras y seguras. Mi pasión por la tecnología me impulsa a
-                            mantenerme actualizado con las últimas tendencias y mejores prácticas.
-                        </p>
-                        <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
-                            <form action="./Currículum Vitae Pablo Valladares.pdf" method="get">
-                                <button>Ver CV</button>
-                            </form>
-                        </div>
-                    </div>
+                    <ul class="belongings">
+                        <li>
+                            Desarrollé una API REST utilizando Next.js, lo que me permitió optimizar la comunicación
+                            entre el cliente y el servidor.
+                        </li>
+                        <li>
+                            Desarrolle e implementé un sistema de notificaciones, mejorando la interacción del usuario
+                            con la aplicación.
+                        </li>
+                        <li>
+                            Apliqué principios de diseño para crear una interfaz responsiva, alineándome con las
+                            especificaciones del diseñador y garantizando una experiencia de usuario fluida en todos los
+                            dispositivos.
+                        </li>
+                        <li>
+                            Gestioné una base de datos NoSQL, específicamente Firebase, lo que me permitió almacenar y
+                            recuperar datos de manera eficiente.
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
-
-        <section class="skills" id="skills">
-            <div class="content">
-                <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>Mis habilidades</span></div>
-                <div class="skills-details">
-                    <div class="text">
-                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
-                            Las habilidades reflejan nuestros conocimientos.
-                        </div>
-                        <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
-                            Soy fiel creyente de que el conocimiento no es del todo útil si no sabemos aplicarlo; por
-                            ello, utilizo parte de mi tiempo libre para desarrollar proyectos donde pueda demostrar mis
-                            conocimientos y valía en los diversos lenguajes de programación.
-                        </p>
-                        <div class="experience" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
-                            <div class="num">+1</div>
-                            <div class="exp">
-                                Año de<br />
-                                Experiencia laboral
-                            </div>
-                        </div>
-                    </div>
-                    <div class="boxes">
-                        <div class="box">
-                            <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">
-                                HTML/CSS/JS
-                            </div>
-                            <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">
-                                +2 años
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="topic" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="150">
-                                PHP
-                            </div>
-                            <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">
-                                +1 año
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">
-                                Java
-                            </div>
-                            <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">
-                                +1 año
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">
-                                Python
-                            </div>
-                            <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">
-                                5 meses
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="projects" id="projects">
-            <div class="content">
-                <div class="title" data-aos="fade-up" data-aos-duration="1200">
-                    <span style="margin-top: 30px">Mis Conocimientos</span>
-                </div>
-                <div class="boxes">
-                    <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-                        <div class="icon">
-                            <i class="fas fa-desktop"></i>
-                        </div>
-                        <div class="topic">Desarrollo web</div>
-                        <p>
-                            Tengo amplios conocimientos de desarrollo web, tanto de HTML/CSS/JS puro como en el uso de
-                            frameworks y librerías, como podrían ser Bootstrap, Tailwind, React o Angular, incluso de
-                            Node.js o Next.js.
-                        </p>
-                    </div>
-                    <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-                        <div class="icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <div class="topic">Despliegue de aplicaciones</div>
-                        <p>
-                            Gracias a mi formación académica y mi interés propio, sé utilizar herramientas como Docker o
-                            Kubernetes para el despliegue de aplicaciones, ya sean páginas completas o herramientas de
-                            trabajo.
-                        </p>
-                    </div>
-                    <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
-                        <div class="icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <div class="topic">Gestión de bases de datos</div>
-                        <p>
-                            Debido a que es necesario saber organizar las cosas, he aprendido a utilizar bases de datos
-                            SQL, como podrían ser phpMyAdmin o MySQL, así como bases de datos NoSQL, entre ellas
-                            Firebase y MongoDB.
-                        </p>
-                    </div>
-                    <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
-                        <div class="icon">
-                            <i class="fas fa-crosshairs"></i>
-                        </div>
-                        <div class="topic">Pentesting</div>
-                        <p>
-                            Soy un entusiasta de la ciberseguridad, pero aún más del hacking ético, por lo que tengo
-                            conocimientos de metodologías y múltiples herramientas para realizar auditorías de
-                            seguridad, así como para generar informes.
-                        </p>
-                    </div>
-                    <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
-                        <div class="icon">
-                            <i class="fas fa-xmark"></i>
-                        </div>
-                        <div class="topic">Incidentes de Ciberseguridad</div>
-                        <p>
-                            Ya que me encanta el hacking ético, también es necesario saber defenderse y cómo actuar
-                            frente a un ataque cibernético, por lo que dispongo de suficiente entrenamiento como para
-                            resolver dichos problemas.
-                        </p>
-                    </div>
-                    <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">
-                        <div class="icon">
-                            <i class="fas fa-magnifying-glass"></i>
-                        </div>
-                        <div class="topic">Analisis forense</div>
-                        <p>
-                            Creo que de las cosas más importantes en informática es saber recuperar información cuando
-                            sucede algún accidente, por lo que también me he formado profundamente en el análisis
-                            forense informático, tanto de dispositivos móviles como de sistemas.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Me section -->
-        <section class="contact" id="contact">
-            <div class="content">
-                <div class="title" data-aos="fade-up" data-aos-duration="1500">
-                    <span>Contáctame</span>
-                </div>
-                <div class="text">
-                    <div class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
-                        ¿Tienes algún proyecto?
-                    </div>
-                    <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
-                        <a
-                            href="mailto:PvalladaresG@proton.me?subject=Quiero20%Contactarte&body=Body%20Here"
-                            target="_blank"
-                        >
-                            <button>Contáctame</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer Section -->
-        <footer>
-            <div class="text">
-                <span>Creado por <a href="#">PabloVG</a> | &#169; 2025 Todos los derechos reservados</span>
-            </div>
-        </footer>
+        </div>
+        <script src="../script.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({ offset: 0 });
+        </script>
+        <script>
+            setInterval(() => {
+                const strongElements = document.querySelectorAll("strong");
+                strongElements.forEach((el) => {
+                    el.classList.add("shake");
+                    setTimeout(() => {
+                        el.classList.remove("shake");
+                    }, 500);
+                });
+            }, 5000);
+        </script>
     </body>
-
-    <script src="../script.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({ offset: 0 });
-    </script>
 </html>
