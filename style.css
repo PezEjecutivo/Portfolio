@@ -1,3 +1,4 @@
+/* Estilos base */
 body {
     font-family: "Poppins", sans-serif;
     background-color: #f5e6c8;
@@ -113,6 +114,12 @@ h1 {
     position: absolute;
     left: 0;
     color: #8b4513;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .alignment {
@@ -253,5 +260,91 @@ strong {
     100% {
         text-shadow: 0 0 10px #f5e6c8, 0 0 20px #f5e6c8, 0 0 30px #f5e6c8, 0 0 40px #5c2d1a;
         opacity: 0.8;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .character-sheet {
+        padding: 15px;
+    }
+
+    .top-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .character-image {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 15px;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-board {
+        padding: 10px;
+    }
+
+    .missions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-card {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    .character-sheet {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .top-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .character-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .stat-item {
+        flex-direction: column;
+    }
+
+    .stat-label {
+        min-width: auto;
+        margin-bottom: 5px;
+    }
+
+    .mission-image {
+        height: 120px;
+    }
+
+    .mission-content {
+        padding: 10px;
     }
 }
