@@ -1,0 +1,213 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f5e6c8;
+    color: #3a2c1a;
+    margin: 0;
+    padding: 20px;
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/old_map.png");
+}
+
+.ranking-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.food-card {
+    display: flex;
+    align-items: stretch;
+    background-color: rgba(255, 248, 220, 0.9);
+    border: 2px solid #8b4513;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.food-image {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #8b4513;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.food-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.food-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.food-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.food-description {
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.food-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+}
+
+.rating-value {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.rating-low {
+    color: red;
+}
+
+.rating-medium {
+    color: green;
+}
+
+.rating-high {
+    color: orange;
+    text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00;
+}
+
+.rating-legendary {
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+}
+
+.legend-card {
+    background-color: #e6d5b8;
+    border: 2px solid #8b4513;
+    padding: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.legend-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.legend-item {
+    margin-bottom: 5px;
+}
+
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #8b4513;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.floating-btn:hover {
+    background-color: #a0522d;
+    transform: scale(1.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #e6d5b8;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 80%;
+    border: 2px solid #8b4513;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #8b4513;
+}
+
+.close-btn:hover {
+    color: #a0522d;
+}
+
+.controls-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.sort-container {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-btn,
+.sort-btn {
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.sort-btn:hover {
+    background-color: #a0522d;
+    transform: scale(1.05);
+}
+
+.filter-btn.active,
+.sort-btn.active {
+    background-color: #ffcc00;
+    color: #3a2c1a;
+    font-weight: bold;
+}
