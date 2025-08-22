@@ -1,252 +1,194 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../style.css" />
-        <link rel="icon" type="image/png" href="../media/pezEjecutivo.png" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-        <title>PabloVG - Portfolio</title>
-    </head>
-    <body>
-        <div class="character-sheet">
-            <a href="https://www.pablo-vg.com/es/" class="flag-link" title="Versión española">
-                <img src="../media/banderaEs.svg" alt="Spanish flag" class="flag-icon" />
-            </a>
-            <div class="header">
-                <h1 data-aos="fade-down" data-aos-duration="1500" data-aos-delay="100" data-aos-once="true">PabloVG</h1>
-                <div
-                    class="subtitle"
-                    data-aos="fade-down"
-                    data-aos-duration="1500"
-                    data-aos-delay="300"
-                    data-aos-once="true"
-                >
-                    ✦
-                    <span class="typewriter-text"> </span>
-                    ✦
-                </div>
-            </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <title>PabloVG - Portfolio</title>
+    <link rel="stylesheet" href="../es/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
+        <div class="logo">PABLO VALLADARES</div>
+        <a href="#contact-section" class="contact-btn">Contact</a>
+    </header>
 
-            <div class="top-section">
-                <div
-                    class="character-image"
-                    data-aos="zoom-in"
-                    data-aos-duration="3000"
-                    data-aos-delay="100"
-                    data-aos-once="true"
-                >
-                    <img
-                        style="object-fit: cover; width: 100%; height: 100%"
-                        src="../media/Yo.png"
-                        alt="Rocatón, el Topo de la Pala"
-                    />
-                </div>
-
-                <div class="basic-info">
-                    <h2 class="section-title">Basic Information</h2>
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <div class="stat-label">Languages:</div>
-                            <div>Spanish - Native <br />English - Fluent (B2)</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-label">Specialty:</div>
-                            <div>FullStack - Backend</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-label">
-                                Main <br />
-                                Languages:
-                            </div>
-                            <div>
-                                PHP | Java <br />
-                                Python | JavaScript
-                            </div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-label">Status:</div>
-                            <div
-                                class="alignment"
-                                data-aos="flip-up"
-                                data-aos-duration="2500"
-                                data-aos-delay="100"
-                                data-aos-once="true"
-                            >
-                                Looking for employment
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2 class="section-title">About me</h2>
-                <p>
-                    I am an enthusiast of <strong>web application development</strong> and
-                    <strong>cybersecurity</strong>, committed to creating innovative and secure solutions. My passion
-                    for technology drives me to stay updated with the latest trends and best practices.
-                </p>
-            </div>
-
-            <div class="section">
-                <h2
-                    class="section-title"
-                    data-aos="fade-in"
-                    data-aos-duration="1500"
-                    data-aos-delay="100"
-                    data-aos-once="true"
-                >
-                    Knowledge
-                </h2>
-                <p>
-                    I have an advanced command of languages such as <strong>JavaScript</strong>, <strong>Java</strong>,
-                    <strong>PHP</strong>, and <strong>Python</strong>, as well as solid knowledge in databases
-                    <strong>MySQL</strong> and <strong>MongoDB</strong>. Additionally, I have experience in creating
-                    attractive and responsive user interfaces with modern frameworks like
-                    <strong>TailwindCSS</strong> and <strong>Bootstrap</strong>. My knowledge also includes the use of
-                    <strong>Docker</strong> for container management, as well as knowledge in
-                    <strong>ethical hacking</strong> and <strong>forensic analysis</strong>, which allows me to approach
-                    web development projects with a comprehensive and secure focus.
-                </p>
-                <div class="skills">
-                    <div>
-                        <h2>Backend</h2>
-                        <ul class="belongings">
-                            <li>Python</li>
-                            <li>PHP</li>
-                            <li>Java</li>
-                            <li>NextJS/NodeJS</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2>Frontend</h2>
-                        <ul class="belongings">
-                            <li>SaaS</li>
-                            <li>TailwindCSS</li>
-                            <li>JavaScript</li>
-                            <li>React/Angular/Vue/Astro</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2>Data bases</h2>
-                        <ul class="belongings">
-                            <li>MySQL</li>
-                            <li>MongoDB</li>
-                            <li>Firebase</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2>General Topics</h2>
-                        <ul class="belongings">
-                            <li>Docker</li>
-                            <li>Git</li>
-                            <li>Ciberseguridad</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2
-                    class="section-title"
-                    data-aos="fade-in"
-                    data-aos-duration="1500"
-                    data-aos-delay="100"
-                    data-aos-once="true"
-                >
-                    Projects
-                </h2>
-
-                <div class="mission-board">
-                    <div class="missions-grid">
-                        <a href="https://ai-interview-pvg.vercel.app/sign-in" class="mission-card">
-                            <div class="mission-image">
-                                <img src="../media/ProyectoAI.png" alt="Proyecto 1" />
-                            </div>
-                            <div class="mission-content">
-                                <h4 class="mission-title">Interview generator with AI</h4>
-                                <p class="mission-desc">
-                                    Interactive platform to practice interviews with an Artificial Intelligence
-                                    assistant.
-                                </p>
-                            </div>
-                        </a>
-
-                        <a href="https://pvgceti.github.io/Apuntes/Hacking%20Etico/index.html" class="mission-card">
-                            <div class="mission-image">
-                                <img src="../media/ProyectoApuntes.png" alt="Proyecto 2" />
-                            </div>
-                            <div class="mission-content">
-                                <h4 class="mission-title">Notes on computer science</h4>
-                                <p class="mission-desc">
-                                    Blog in the form of notes with information and guides on development and
-                                    cybersecurity.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2
-                    class="section-title"
-                    data-aos="fade-in"
-                    data-aos-duration="1500"
-                    data-aos-delay="100"
-                    data-aos-once="true"
-                >
-                    Work Experience
-                </h2>
-                <div class="history">
-                    <h3>Digital Cuisine</h3>
-                    <p>
-                        At Digital Cuisine, I worked as a full stack developer where I did multiple things, including:
-                    </p>
-
-                    <ul class="belongings">
-                        <li>
-                            I developed a REST API using Next.js, which allowed me to optimize communication between the
-                            client and the server.
-                        </li>
-                        <li>
-                            I developed and implemented a notification system, improving user interaction with the
-                            application.
-                        </li>
-                        <li>
-                            I applied design principles to create a responsive interface, aligning with the designer's
-                            specifications and ensuring a smooth user experience across all devices.
-                        </li>
-                        <li>
-                            I managed a NoSQL database, specifically Firebase, which allowed me to store and retrieve
-                            data efficiently.
-                        </li>
-                    </ul>
-                </div>
+    <main>
+        <div class="title-section" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+            <h1>WEB DEVELOPER</h1>
+            <h2>AND CYBERSECURITY EXPERT</h2>
+            <div class="location">
+                <p>BASED<br>In<br>SPAIN</p>
             </div>
         </div>
-        <script src="../scriptEn.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init({ offset: 0 });
-        </script>
-        <script>
-            setInterval(() => {
-                const strongElements = document.querySelectorAll("strong");
-                strongElements.forEach((el) => {
-                    el.classList.add("shake");
-                    setTimeout(() => {
-                        el.classList.remove("shake");
-                    }, 500);
-                });
-            }, 5000);
-        </script>
-    </body>
+
+        <div class="bio-section" data-aos="fade-up"
+        data-aos-duration="1500">
+            <p class="bio">                
+                I'M A <span style="color: #C8102E;">WEB APPLICATION AND CYBERSECURITY</span> ENTHUSIAST,
+                COMMITTED TO CREATING INNOVATIVE AND <span style="color: #F1BF00;">SECURE SOLUTIONS</span>.
+            </p>
+        </div>
+
+        <div class="scroll-down" data-aos="fade-up"
+        data-aos-duration="1500"></div>
+
+        <spline-viewer data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="3000" class="planet-3D"  url="https://prod.spline.design/hJpPgPNHbMX3s8AC/scene.splinecode">
+        </spline-viewer>
+
+    </main>
+
+    <section class="about-section">
+        <h1 class="about-title" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">About Me</h1>
+
+        <div class="bento-grid">
+            <div class="card intro" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" data-aos-duration="1500">
+                <h2 class="card-title">HI, I'M PABLO</h2>
+                <p class="card-text">
+                    I am a web developer and cybersecurity expert, specializing in creating innovative and secure solutions. My passion for technology drives me to stay updated with the latest trends and best practices. I have experience in developing REST APIs and implementing responsive interfaces that ensure a fluid user experience on all devices.
+                </p>
+
+                <img src="../images/gradient1.png" alt="" class="background-img">
+
+                <div class="model-box">
+                    <spline-viewer class="info-3D" url="https://prod.spline.design/mCaImxldXUMeGcTc/scene.splinecode"></spline-viewer>
+                </div>
+            </div>
+
+            <div class="card tech" data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" data-aos-duration="1500">
+                <h2 class="card-title">TECHNICAL STACK</h2>
+                <p class="card-text">
+                    I specialize in a wide range of programming languages, frameworks, and development tools. With a strong command of PHP, Java, and Node.js, I build attractive and functional web interfaces. My experience includes frameworks like React, Laravel, and Spring, in addition to SQL and NoSQL databases like Firebase. I also have skills in Docker, Pentesting, and forensic analysis.
+                </p>
+
+                <img src="../images/gradient 2.png" alt="" class="background-img">
+                <img src="../images/skills group.png" alt="" class="skills-group">
+            </div>
+
+            <div class="card time" data-aos="fade-up"
+            data-aos-duration="1500">
+                <h2 class="card-title">TOTAL AVAILABILITY & FLEXIBILITY</h2>
+
+                <p class="card-text">Based in El Puerto de Santa María and open to worldwide remote work.</p>
+
+                <img src="../images/gradient3&4.png" alt="" class="background-img">
+
+                <a href="mailto:PValladaresG@proton.me" class="btn"><i class='bx bx-send'></i> CONTACT ME</a>
+            </div>
+
+            <div class="card passion" data-aos="fade-up"
+            data-aos-duration="1500">
+                <h2 class="card-title">PASSION FOR PROGRAMMING</h2>
+                <p class="card-text">
+                    Solving problems and creating solutions through code. Programming is not just my job, it's also my passion. I enjoy exploring new technologies and constantly improving my skills.
+                </p>
+
+                <img src="../images/gradient3&4.png" alt="" class="background-img">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="projects-section">
+        <h3 data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">My Projects</h3>
+
+        <div class="slider" style="
+            --width: 60rem;
+            --height: 40rem;
+            --quantity: 4;
+        ">
+
+            <div class="list">
+                <div class="item" style="--position: 1"><video id="projectVideo1" loop playsinline src="../video/project-1.mp4"></video></div>
+
+                <div class="item" style="--position: 2"><video id="projectVideo2" loop playsinline src="../video/project-2.mp4"></video></div>
+
+                <div class="item" style="--position: 3"><video id="projectVideo3" loop playsinline src="../video/project-3.mp4"></video></div>
+
+                <div class="item" style="--position: 4"><video id="projectVideo4" loop playsinline src="../video/project-4.mp4"></video></div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="contact-section" id="contact-section">
+        <div class="section-header" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+            <h3>Contact Me</h3>
+            <p>Have a project in mind or want to say hello? Send me a message.</p>
+        </div>
+
+        <div class="contact-grid" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0" data-aos-duration="1500">
+
+            <div class="info-card">
+                <h3>Contact Information</h3>
+
+                <div class="contact-item">
+                    <p>Email</p>
+                    <a href="mailto:PValladaresG@proton.me">PValladaresG@proton.me</a>
+                </div>
+
+                <div class="contact-item">
+                    <p>Phone</p>
+                    <a href="#">+34 644 50 93 03</a>
+                </div>
+
+                <div class="contact-item">
+                    <p>Location</p>
+                    <a href="#">El Puerto de Santa María, Spain</a>
+                </div>
+
+                <div class="social-link">
+                    <p>Connect with me</p>
+                    <a href="https://github.com/PezEjecutivo" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/pablo-valladares-gonz%C3%A1lez/" target="_blank">Linkedin</a>
+                    <a href="https://www.youtube.com/@pezejecutivo5738" target="_blank">Youtube</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3>© 2025, Made by Pablo Valladares. Designed following a tutorial by MiladiCode.</h3>
+        <div class="box-icons">
+            <a href="https://www.youtube.com/@pezejecutivo5738" target="_blank"><i class='bx bxl-youtube'></i></a>
+            <a href="https://github.com/PezEjecutivo" target="_blank"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.linkedin.com/in/pablo-valladares-gonz%C3%A1lez/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+        </div>
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.79/build/spline-viewer.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
+    <script src="../es/app.js"></script>
+</body>
 </html>
