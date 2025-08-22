@@ -17,6 +17,68 @@ body{
     text-decoration: none;
 }
 
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom:2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.contact-btn {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    background-color: rgba(143, 143, 143, 0.2);
+    border: 1px solid rgba(102, 102, 102, 0.5);
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #76b0ab37;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h3 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    background-image: linear-gradient(rgb(133, 133, 133), rgb(255, 255, 255));
+    color: transparent;
+    background-clip: text;
+}
+
+.section-header p {
+    color: lightgray;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* CONTACT GRID */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
 .info-card {
     background-color: #1e1e1e;
     border-radius: 12px;
@@ -31,4 +93,58 @@ body{
 
 .info-card {
     padding: 30px;
+}
+
+.info-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    color: lightgray;
+}
+
+.contact-item {
+    margin-bottom: 3rem;
+}
+
+.contact-item p {
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: #7ce9e6;
+}
+
+.contact-item a {
+    color: lightgray;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-item a:hover {
+    color: #7ce9e6;
+}
+
+.social-link {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.social-link p {
+    margin-bottom: 15px;
+    color: #7ce9e6;
+    font-weight: 600;
+}
+
+.social-link a {
+    display: inline-block;
+    margin-right: 15px;
+    color: lightgray;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #2d2d2d;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.social-link a:hover {
+    background-color: #7ce9e6;
+    color: lightgray;
 }
